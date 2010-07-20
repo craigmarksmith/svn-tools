@@ -2,10 +2,10 @@
 
 if [ -f  ../stash/stash.diff ]
 then
-  echo "Popping stash..."
+  echo "Applying your stash..."
   patch -p0 < ../stash/stash.diff
   rm ../stash/stash.diff
-  echo "Popped!"
+  echo "Applied!"
 else
   echo "Sorry, no stash file exists"
 fi
