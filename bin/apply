@@ -1,10 +1,10 @@
 #!/bin/bash
 
-if [ -f  ../stash/stash.diff ]
+if [ -f  ../../stash/stash.diff ]
 then
   echo "Applying your stash..."
-  patch -p0 < ../stash/stash.diff
-  rm ../stash/stash.diff
+  patch -p0 < ../../stash/stash.diff
+  rm ../../stash/stash.diff
   echo "Applied!"
 else
   echo "Sorry, no stash file exists"
